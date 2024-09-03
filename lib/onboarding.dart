@@ -3,7 +3,6 @@ import 'package:gemini_gpt/myHomePage.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +15,7 @@ class Onboarding extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  'You AI Assistant',
+                  'Your AI Assistant',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,

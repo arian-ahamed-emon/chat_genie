@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gemini_gpt/themeNotifier.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 
+
 class MyHomePage extends ConsumerStatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -41,7 +42,6 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
       print("Error : $e");
     }
   }
-
   @override
   Widget build(BuildContext context) {
     final currentTheme = ref.watch(themeProvider);
@@ -59,7 +59,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
               children: [
                 Image.asset('assets/gpt-robot.png'),
                 SizedBox(width: 10,),
-                Text('Gemini Gpt', style: Theme.of(context).textTheme.titleLarge,)
+                Text('ChatGenie', style: Theme.of(context).textTheme.titleLarge,)
               ],
             ),
             GestureDetector(
